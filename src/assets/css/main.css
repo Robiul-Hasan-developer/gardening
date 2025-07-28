@@ -3247,8 +3247,8 @@ input:focus-visible {
 
 /* Max Height Css Class End */
 /* Max width Css Class Start */
-.max-w-200-px {
-    max-width: 200px;
+.max-w-210-px {
+    max-width: 210px;
 }
 
 .max-w-1140-px {
@@ -5163,6 +5163,10 @@ input:focus-visible {
 
 /* Submenu End */
 /* Header Menu and Submenu Css End */
+.menu-text-white .nav-menu__link {
+    color: #fff;
+}
+
 /* ================================= Header Css End =========================== */
 /* Mega menu css start */
 .mega-menu {

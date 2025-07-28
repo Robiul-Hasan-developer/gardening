@@ -1,7 +1,9 @@
 <!-- ==================== Mobile Menu Start Here ==================== -->
-<div class="mobile-menu d-lg-none d-block scroll-sm position-fixed bg-white tw-w-300-px tw-h-screen overflow-y-auto tw-p-6 tw-z-999 tw--translate-x-full tw-pb-68 ">
+<div
+    class="mobile-menu d-lg-none d-block scroll-sm position-fixed bg-white tw-w-300-px tw-h-screen overflow-y-auto tw-p-6 tw-z-999 tw--translate-x-full tw-pb-68 ">
 
-    <button type="button" class="close-button position-absolute tw-end-0 top-0 tw-me-2 tw-mt-2 tw-w-605 tw-h-605 rounded-circle d-flex justify-content-center align-items-center text-neutral-900 bg-neutral-200 hover-bg-neutral-900 hover-text-white"> 
+    <button type="button"
+        class="close-button position-absolute tw-end-0 top-0 tw-me-2 tw-mt-2 tw-w-605 tw-h-605 rounded-circle d-flex justify-content-center align-items-center text-neutral-900 bg-neutral-200 hover-bg-neutral-900 hover-text-white">
         <i class="ph ph-x"></i>
     </button>
 
@@ -11,9 +13,70 @@
         </a>
         <div class="mobile-menu__menu">
             @@include('../partials/_nav-menu.html', {
-                "class" : "nav-menu--mobile d-block tw-mt-8"
+            "class" : "nav-menu--mobile d-block tw-mt-8"
             })
         </div>
+
+
+        <div class="d-flex flex-column tw-gap-6 justify-content-between flex-md-nowrap flex-wrap tw-mt-8">
+            <div class="d-flex tw-gap-5 flex-column">
+                <div class="d-flex align-items-center tw-gap-205">
+                    <span class="text-main-two-600 tw-leading-none tw-text-xl d-flex">
+                        <i class="ph ph-envelope-simple"></i>
+                    </span>
+                    <a href="mailto:support@example.com"
+                        class="text-heading hover-animate-underline">support@example.com</a>
+                </div>
+                <div class="d-flex  align-items-center tw-gap-205">
+                    <span class="text-main-two-600 tw-leading-none tw-text-xl d-flex">
+                        <i class="ph ph-phone"></i>
+                    </span>
+                    <a href="tel:+1 (123) 456-7899" class="text-heading hover-animate-underline">+1 (123) 456-7899</a>
+                </div>
+                <div class="d-flex align-items-center tw-gap-205">
+                    <span class="text-main-two-600 tw-leading-none tw-text-xl d-flex">
+                        <i class="ph ph-clock"></i>
+                    </span>
+                    <p class="text-heading">Mon - Fri: 8:30 am - 5:00 pm, Sat - Sun: Closed</p>
+                </div>
+            </div>
+
+
+            <div class="d-flex align-items-center tw-gap-4">
+                <p class=" fw-medium tw-text-base flex-shrink-0 d-flex">Follow Us:</p>
+                <div class="d-flex align-items-center tw-gap-5">
+                    <a href="https://wwww.facebook.com"
+                        class="text-heading hover-text-main-600 tw-text-lg tw-leading-none d-flex">
+                        <i class="ph-fill ph-facebook-logo"></i>
+                    </a>
+                    <a href="https://wwww.twitter.com"
+                        class="text-heading hover-text-main-600 tw-text-lg tw-leading-none d-flex">
+                        <i class="ph-fill ph-twitter-logo"></i>
+                    </a>
+                    <a href="https://wwww.instagram.com"
+                        class="text-heading hover-text-main-600 tw-text-lg tw-leading-none d-flex">
+                        <i class="ph-bold ph-instagram-logo"></i>
+                    </a>
+                    <a href="https://wwww.pinterest.com"
+                        class="text-heading hover-text-main-600 tw-text-lg tw-leading-none d-flex">
+                        <i class="ph-bold ph-pinterest-logo"></i>
+                    </a>
+                </div>
+            </div>
+
+            <a href="contact.html"
+                class="btn btn-main hover-style-two button--stroke active-scale-094 tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-205 group group-item active--translate-y-2 rounded-pill"
+                data-block="button">
+                <span class="button__flair"></span>
+                <span class="button__label">Get A Quote</span>
+                <span class="text-heading z-1 position-relative">
+                    <img src="assets/images/icons/arrow-right-black.png" alt="Arrow"
+                        class="group-hover-item-text-invert-black tw-duration-300">
+                </span>
+            </a>
+
+        </div>
+
     </div>
 </div>
 <!-- ==================== Mobile Menu End Here ==================== -->

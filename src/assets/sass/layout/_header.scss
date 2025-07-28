@@ -137,4 +137,12 @@
 
 /* Submenu End */
 /* Header Menu and Submenu Css End */
+
+.menu-text-white {
+  .nav-menu {
+    &__link {
+      color: #fff;
+    }
+  }
+}
 /* ================================= Header Css End =========================== */
