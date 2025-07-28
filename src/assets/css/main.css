@@ -1865,6 +1865,14 @@ input:focus-visible {
     font-size: inherit;
 }
 
+.text-display-one {
+    font-size: var(--display-one);
+}
+
+.text-display-two {
+    font-size: var(--display-two);
+}
+
 .text-22-px {
     font-size: clamp(1.125rem, 0.8942rem + 0.4808vw, 1.375rem);
 }
