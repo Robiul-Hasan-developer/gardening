@@ -1,5 +1,5 @@
 /* Font Family*/
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Vidaloka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Parkinsans:wght@300..800&display=swap');
 
 $colors: (
   "main": ("50": hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.9)),
@@ -79,8 +79,9 @@ $font-sizes: (
 /* ========================= Variable Css Start ======================== */
 :root {
   /* Font Family Variable */
-  --heading-font: 'Vidaloka', serif;
-  --body-font: 'Poppins', sans-serif;
+  --heading-font: "Parkinsans", sans-serif;
+  --body-font: "Parkinsans", sans-serif;
+  --manrope-font: "Manrope", sans-serif;
 
   /* Font Size Variable Start */
   --display-one: clamp(3rem, 0rem + 6.25vw, 6.25rem); // Min:48px - Max:100px

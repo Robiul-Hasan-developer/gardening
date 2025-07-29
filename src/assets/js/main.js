@@ -200,19 +200,6 @@
     }
     // ********************* Toast Notification Js End *********************
 
-    // ========================= Delete Item Js start ===================
-    $(document).on("click", ".delete-button", function () {
-      $(this).closest(".delete-item").addClass("d-none");
-
-      toastMessage(
-        "danger",
-        "Deleted",
-        "You deleted successfully!",
-        "ph-bold ph-trash"
-      );
-    });
-    // ========================= Delete Item Js End ===================
-
     // ========================= Form Submit Js Start ===================
     $(document).on("submit", ".form-submit", function (e) {
       e.preventDefault();
@@ -229,26 +216,41 @@
       );
     });
     // ========================= Form Submit Js End ===================
-
-    // ================== Password Show Hide Js Start ==========
-    $(".toggle-password").on("click", function () {
-      $(this).toggleClass("active");
-      var input = $($(this).attr("id"));
-      if (input.attr("type") == "password") {
-        input.attr("type", "text");
-        $(this).removeClass("ph-bold ph-eye-closed");
-        $(this).addClass("ph-bold ph-eye");
-      } else {
-        input.attr("type", "password");
-        $(this).addClass("ph-bold ph-eye-closed");
-      }
+    
+    // ========================= Search Popup Js Start ===================
+    $(".search-popup__button").on("click", function () {
+      $(".search-popup").addClass("active");
+      $(".overlay").addClass("show-overlay");
     });
+    $(".search-popup__close, .overlay").on("click", function () {
+      $(".search-popup").removeClass("active");
+      $(".overlay").removeClass("show-overlay");
+    });
+    // ========================= Search Popup Js End ===================
+
+    
+    
+    
+    
+    // ================== Password Show Hide Js Start ==========
+    // $(".toggle-password").on("click", function () {
+    //   $(this).toggleClass("active");
+    //   var input = $($(this).attr("id"));
+    //   if (input.attr("type") == "password") {
+    //     input.attr("type", "text");
+    //     $(this).removeClass("ph-bold ph-eye-closed");
+    //     $(this).addClass("ph-bold ph-eye");
+    //   } else {
+    //     input.attr("type", "password");
+    //     $(this).addClass("ph-bold ph-eye-closed");
+    //   }
+    // });
     // ========================= Password Show Hide Js End ===========================
 
     // ========================= AOS Js Start ===========================
-    AOS.init({
-      once: true,
-    });
+    // AOS.init({
+    //   once: true,
+    // });
     // ========================= AOS Js End ===========================
 
     // // ================================= Brand slider Start =========================

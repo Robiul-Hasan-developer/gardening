@@ -1,0 +1,14 @@
+/* Banner Two Css start */
+.banner-two {
+    padding: 226px 0;
+
+    .banner-two-thumb {
+        @media (min-width: 992px) {
+            position: absolute;
+            inset-inline-end: 0;
+            inset-block-end: 0px;
+        }
+    }
+}
+
+/* Banner Two Css end */

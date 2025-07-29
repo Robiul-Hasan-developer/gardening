@@ -33,40 +33,26 @@
   <!--==================== Preloader End ====================-->
 
   <!-- ========================== Settings Panel start ==================================== -->
-<div
-  class="settings-panel position-fixed top-50 translate-middle-y tw-z-999 d-flex align-items-center"
->
-  <button
-    type="button"
-    class="settings-button tw-w-12 tw-h-12 bg-main-600 text-white hover-bg-main-800 tw-duration-100 d-flex justify-content-center align-items-center"
-  >
-    <i
-      class="ph-fill ph-gear-six setting-icon tw-text-2xl tw-leading-none animation-rotate tw-w-6 tw-h-6"
-    ></i>
-    <i
-      class="ph-bold ph-x close-icon tw-text-2xl tw-leading-none tw-w-6 tw-h-6"
-    ></i>
+<div class="settings-panel position-fixed top-50 translate-middle-y tw-z-999 d-flex align-items-center">
+  <button type="button"
+    class="settings-button tw-w-12 tw-h-12 bg-main-600 text-heading hover-bg-main-800 tw-duration-100 d-flex justify-content-center align-items-center">
+    <i class="ph-fill ph-gear-six setting-icon tw-text-2xl tw-leading-none animation-rotate tw-w-6 tw-h-6"></i>
+    <i class="ph-bold ph-x close-icon tw-text-2xl tw-leading-none tw-w-6 tw-h-6"></i>
   </button>
 
-  <div
-    class="settings-panel__content bg-white tw-px-6 tw-py-13 d-flex flex-column tw-gap-10 scroll-sm overflow-y-auto"
-  >
+  <div class="settings-panel__content bg-white tw-px-6 tw-py-13 d-flex flex-column tw-gap-10 scroll-sm overflow-y-auto">
     <div class="d-flex flex-column tw-gap-10">
       <div class="">
         <h6 class="settings-panel__title text-center tw-mb-6 text-uppercase">
           Cursor
         </h6>
         <div class="settings-panel__buttons cursor__buttons d-flex tw-gap-4">
-          <button
-            type="button"
-            class="settings-panel__button cursor-animate bg-main-two-600 hover-bg-main-600 tw-duration-300 text-white tw-text-base tw-py-305 tw-px-3 fw-medium active-scale-094 flex-grow-1 active"
-          >
+          <button type="button"
+            class="settings-panel__button cursor-animate bg-main-two-600 hover-bg-main-600 tw-duration-300 text-white tw-text-base tw-py-305 tw-px-3 fw-medium active-scale-094 flex-grow-1 active">
             Animate
           </button>
-          <button
-            type="button"
-            class="settings-panel__button cursor-default bg-main-two-600 hover-bg-main-600 tw-duration-300 text-white tw-text-base tw-py-305 tw-px-3 fw-medium active-scale-094 flex-grow-1"
-          >
+          <button type="button"
+            class="settings-panel__button cursor-default bg-main-two-600 hover-bg-main-600 tw-duration-300 text-white tw-text-base tw-py-305 tw-px-3 fw-medium active-scale-094 flex-grow-1">
             Default
           </button>
         </div>
@@ -76,16 +62,12 @@
           Direction
         </h6>
         <div class="settings-panel__buttons d-flex tw-gap-4">
-          <button
-            type="button"
-            class="settings-panel__button direction-ltr bg-main-two-600 hover-bg-main-600 tw-duration-300 text-white tw-text-base tw-py-305 tw-px-3 fw-medium active-scale-094 flex-grow-1 active"
-          >
+          <button type="button"
+            class="settings-panel__button direction-ltr bg-main-two-600 hover-bg-main-600 tw-duration-300 text-white tw-text-base tw-py-305 tw-px-3 fw-medium active-scale-094 flex-grow-1 active">
             LTR
           </button>
-          <button
-            type="button"
-            class="settings-panel__button direction-rtl bg-main-two-600 hover-bg-main-600 tw-duration-300 text-white tw-text-base tw-py-305 tw-px-3 fw-medium active-scale-094 flex-grow-1"
-          >
+          <button type="button"
+            class="settings-panel__button direction-rtl bg-main-two-600 hover-bg-main-600 tw-duration-300 text-white tw-text-base tw-py-305 tw-px-3 fw-medium active-scale-094 flex-grow-1">
             RTL
           </button>
         </div>
@@ -94,7 +76,6 @@
   </div>
 </div>
 <!-- ========================== Settings Panel end ==================================== -->
-
 
   <!--==================== Overlay Start ====================-->
   <div class="overlay"></div>
@@ -120,6 +101,26 @@
   <div class="cursor"></div>
   <span class="dot"></span>
   <!-- Custom Cursor End -->
+
+  <!-- Search Popup Start -->
+  <div class="search-popup bg-white tw-p-17 d-flex align-items-center justify-content-center bg-white">
+    <div class="container">
+      <div class="tw-pb-15">
+        <button type="button"
+          class="search-popup__close d-flex justify-content-center align-items-center text-heading tw-text-2xl tw-w-16 tw-h-16 bg-main-600 rounded-circle mx-auto">
+          <i class="ph-bold ph-x"></i>
+        </button>
+      </div>
+      <form action="#" class="search-popup__form position-relative tw-pt-6">
+        <input type="search" class="search-popup__input" placeholder="Search Here...">
+        <button type="submit"
+          class="tw-text-3xl tw-leading-none text-heading hover-text-main-600 position-absolute tw-end-0 top-50 translate-middle-y">
+          <i class="ph-bold ph-magnifying-glass"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+  <!-- Search Popup End -->
 
   <!-- ==================== Mobile Menu Start Here ==================== -->
 <div
@@ -753,16 +754,16 @@
       <div class="d-flex align-items-center tw-gap-705">
         <div class="d-flex align-items-center tw-gap-105 flex-shrink-0">
           <button type="button"
-            class="tw-w-11 tw-h-11 text-white tw-text-xl d-flex justify-content-center align-items-center bg-white-08 rounded-circle hover-bg-main-600 hover-text-heading tw-duration-300 group-item">
+            class="tw-w-11 tw-h-11 text-white tw-text-xl d-flex justify-content-center align-items-center bg-white-08 rounded-circle hover-bg-main-600 hover-text-heading tw-duration-300 group-item search-popup__button">
             <i class="ph-bold ph-magnifying-glass"></i>
           </button>
-          <button type="button"
+          <a href="cart.html"
             class="tw-w-11 tw-h-11 text-white tw-text-xl d-flex justify-content-center align-items-center bg-white-08 rounded-circle hover-bg-main-600 hover-text-heading tw-duration-300 group-item position-relative">
             <img src="assets/images/icons/shopping.png" alt="Icon"
               class="group-hover-item-text-invert-black tw-duration-300">
             <span
               class="tw-w-5 tw-h-5 bg-white text-heading rounded-circle d-flex justify-content-center align-items-center tw-text-sm position-absolute bottom-0 tw-end-0 tw-me-1 tw-mb-1 tw-leading-none">0</span>
-          </button>
+          </a>
           <button type="button" class="toggle-mobileMenu leading-none d-lg-none text-white tw-text-9 d-flex">
             <i class="ph ph-list"></i>
           </button>
@@ -786,13 +787,13 @@
 </header>
 <!-- ==================== Header End Here ==================== -->
 
-<!-- ========================== Banner section start ============================== -->
-<section class="banner py-120 bg-main-two-600">
+<!-- ========================== Banner Two section start ============================== -->
+<section class="banner-two bg-main-two-600 position-relative">
     <div class="container">
         <div class="row">
             <div class="col-lg-7">
-                <div class="banner-content">
-                    <div class="d-flex align-items-center tw-gap-205 tw-mb-10">
+                <div class="banner-two-content">
+                    <div class="d-flex align-items-center tw-gap-205 tw-mb-4">
                         <img src="assets/images/icons/plan-icon.png" alt="">
                         <span class="text-main-600 fw-semibold text-uppercase tw-text-lg">GREENOLA GARDENING
                             COMPANY</span>
@@ -817,117 +818,14 @@
                 </div>
             </div>
             <div class="col-lg-5">
-                <div class="">
+                <div class="banner-two-thumb">
                     <img src="assets/images/thumbs/banner-img.png" alt="Image">
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- ========================== Banner section end ============================== -->
-
-<div class="container my-5">
-    <div class="">
-        <a href="#"
-            class="btn btn-main hover-style-one button--stroke active-scale-094 tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-5 group active--translate-y-2"
-            data-block="button">
-            <span class="button__flair"></span>
-            <span class="button__label">View services</span>
-            <span
-                class="tw-w-7 tw-h-7 bg-white text-main-600 tw-text-sm tw-rounded d-flex justify-content-center align-items-center position-relative group-hover-bg-main-600 group-hover-text-white tw-duration-500">
-                <i class="ph-bold ph-check"></i>
-            </span>
-        </a>
-    </div>
-    <div class="">
-        <h2 class="cursor-big splitTextStyleOne my-5 fw-semibold hover-animate-underline">This starter pack created by
-            <br> Front End Developer
-            Md. Robiul Hasan
-        </h2>
-    </div>
-
-    <div class="row justify-content-center tw-mb-10">
-        <div class="col-xl-7 pe-lg-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-            <div class="bg-neutral-100 py-60 tw-px-13">
-                <h3 class="tw-mb-4 cursor-big">Fill Up The Form</h3>
-                <p class="text-neutral-1000 max-w-444-px">Your email address will not be published. Required fields are
-                    marked *</p>
-                <form action="#" class="tw-mt-14 d-flex flex-column tw-gap-15 form-submit">
-                    <div class="position-relative">
-                        <input type="text"
-                            class="focus-outline-0 bg-transparent border-0 tw-pb-5 tw-ps-9 w-100 border-bottom border-neutral-300 focus-border-main-600"
-                            placeholder="Your Name*" required="">
-                        <span class="tw-text-xl d-flex text-main-two-600 position-absolute top-0 tw-start-0">
-                            <i class="ph-bold ph-user"></i>
-                        </span>
-                    </div>
-                    <div class="position-relative">
-                        <input type="email"
-                            class="focus-outline-0 bg-transparent border-0 tw-pb-5 tw-ps-9 w-100 border-bottom border-neutral-300 focus-border-main-600"
-                            placeholder="Email Address*" required="">
-                        <span class="tw-text-xl d-flex text-main-two-600 position-absolute top-0 tw-start-0">
-                            <i class="ph-bold ph-envelope"></i>
-                        </span>
-                    </div>
-                    <div class="position-relative">
-                        <textarea
-                            class="focus-outline-0 bg-transparent border-0 tw-pb-5 tw-ps-9 w-100 border-bottom border-neutral-300 focus-border-main-600 tw-h-108-px"
-                            placeholder="Enter Your Message here"></textarea>
-                        <span class="tw-text-xl d-flex text-main-two-600 position-absolute top-0 tw-start-0">
-                            <i class="ph-bold ph-note-pencil"></i>
-                        </span>
-                    </div>
-                    <div class="">
-                        <button type="submit"
-                            class="btn btn-main hover-style-one button--stroke active-scale-094 tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-5 group active--translate-y-2 rounded-0"
-                            data-block="button">
-                            <span class="button__flair"></span>
-                            <span
-                                class="text-white tw-text-2xl group-hover-text-white tw-duration-500 position-relative">
-                                <i class="ph-bold ph-paper-plane-tilt"></i>
-                            </span>
-                            <span class="button__label">Get In Touch</span>
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="col-xl-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
-            <div class="d-flex flex-column tw-gap-5">
-                <div
-                    class="delete-item tw-p-4 tw-rounded-md bg-neutral-100 border-neutral-200 d-flex align-items-center justify-content-between">
-                    <h6 class="">Todo Item 1</h6>
-                    <button type="button"
-                        class="btn btn-main hover-style-one button--stroke active-scale-094 tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-5 group active--translate-y-2 delete-button"
-                        data-block="button">
-                        <span class="button__flair"></span>
-                        <span class="button__label">Delete</span>
-                    </button>
-                </div>
-                <div
-                    class="delete-item tw-p-4 tw-rounded-md bg-neutral-100 border-neutral-200 d-flex align-items-center justify-content-between">
-                    <h6 class="">Todo Item 2</h6>
-                    <button type="button"
-                        class="btn btn-main hover-style-one button--stroke active-scale-094 tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-5 group active--translate-y-2 delete-button"
-                        data-block="button">
-                        <span class="button__flair"></span>
-                        <span class="button__label">Delete</span>
-                    </button>
-                </div>
-                <div
-                    class="delete-item tw-p-4 tw-rounded-md bg-neutral-100 border-neutral-200 d-flex align-items-center justify-content-between">
-                    <h6 class="">Todo Item 3</h6>
-                    <button type="button"
-                        class="btn btn-main hover-style-one button--stroke active-scale-094 tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-5 group active--translate-y-2 delete-button"
-                        data-block="button">
-                        <span class="button__flair"></span>
-                        <span class="button__label">Delete</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<!-- ========================== Banner Two section end ============================== -->
 
 <!-- ================================= Image Animation Start ================================== -->
 <div class="about pb-120 tw-mt-10">
