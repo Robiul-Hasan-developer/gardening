@@ -81,7 +81,7 @@
     --body-font: "Parkinsans", sans-serif;
     --manrope-font: "Manrope", sans-serif;
   /* Font Size Variable Start */
-    --display-one: clamp(3rem, 0rem + 6.25vw, 6.25rem);
+    --display-one: clamp(2.75rem, 0rem + 5.5vw, 6.25rem);
     --display-two: clamp(2.5rem, 0.7692rem + 3.6058vw, 4.375rem);
     --heading-one: clamp(2.25rem, 1.0962rem + 2.4038vw, 3.5rem);
     --heading-two: clamp(1.75rem, 0.9423rem + 1.6827vw, 2.625rem);
@@ -763,7 +763,7 @@ body {
 p {
     font-weight: 400;
     margin: 0;
-    line-height: 1.6;
+    line-height: 1.625;
 }
 
 span {
@@ -5185,6 +5185,10 @@ input:focus-visible {
     color: #fff;
 }
 
+.header-two-bottom {
+    border-bottom: 1px solid hsl(var(--white)/0.15);
+}
+
 /* ================================= Header Css End =========================== */
 /* Mega menu css start */
 .mega-menu {
@@ -5471,11 +5475,55 @@ input:focus-visible {
     padding: 226px 0;
 }
 
+@media (max-width: 1600px) {
+    .banner-two {
+        padding: 180px 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    .banner-two {
+        padding: 120px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .banner-two {
+        padding: 100px 0;
+    }
+}
+
 @media (min-width: 992px) {
     .banner-two .banner-two-thumb {
         position: absolute;
-        inset-inline-end: 0;
+        inset-inline-start: 56%;
         inset-block-end: 0px;
+    }
+}
+
+.rounded-blur {
+    z-index: 1;
+}
+
+.rounded-blur::before {
+    position: absolute;
+    content: "";
+    width: 440px;
+    height: 440px;
+    background-color: #fff;
+    opacity: 0.8;
+    filter: blur(100px);
+    border-radius: 50%;
+    z-index: -1;
+    inset-block-end: 60px;
+    inset-inline-start: 50%;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 1300px) {
+    .rounded-blur::before {
+        width: 300px;
+        height: 300px;
     }
 }
 /* Banner Two Css end */

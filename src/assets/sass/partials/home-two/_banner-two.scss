@@ -2,11 +2,48 @@
 .banner-two {
     padding: 226px 0;
 
+    @media (max-width: 1600px) {
+        padding: 180px 0;
+    }
+
+    @media (max-width: 1200px) {
+        padding: 120px 0;
+    }
+
+    @media (max-width: 576px) {
+        padding: 100px 0;
+    }
+
     .banner-two-thumb {
+
         @media (min-width: 992px) {
             position: absolute;
-            inset-inline-end: 0;
+            inset-inline-start: 56%;
             inset-block-end: 0px;
+        }
+    }
+}
+
+.rounded-blur {
+    z-index: 1;
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 440px;
+        height: 440px;
+        background-color: #fff;
+        opacity: 0.8;
+        filter: blur(100px);
+        border-radius: 50%;
+        z-index: -1;
+        inset-block-end: 60px;
+        inset-inline-start: 50%;
+        transform: translateX(-50%);
+
+        @media (max-width: 1300px) {
+            width: 300px;
+            height: 300px;
         }
     }
 }

@@ -84,7 +84,7 @@ $font-sizes: (
   --manrope-font: "Manrope", sans-serif;
 
   /* Font Size Variable Start */
-  --display-one: clamp(3rem, 0rem + 6.25vw, 6.25rem); // Min:48px - Max:100px
+  --display-one: clamp(2.75rem, 0rem + 5.5vw, 6.25rem); // Min:48px - Max:100px
   --display-two: clamp(2.5rem, 0.7692rem + 3.6058vw, 4.375rem); // Min:40px - Max:70px
 
   --heading-one: clamp(2.25rem, 1.0962rem + 2.4038vw, 3.5rem); // Min:36px - Max:56px
