@@ -1,0 +1,16 @@
+/* Service Two Css Start */
+.service-two {
+    &__bg {
+        width: 36%;
+    }
+}
+
+.width-100-vw {
+    // width: 100vw;
+
+    @media (min-width: 1200px) {
+        margin-right: -32%;
+    }
+}
+
+/* Service Two Css End */

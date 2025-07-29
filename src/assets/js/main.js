@@ -234,7 +234,32 @@
     });
     // ========================= Search Popup Js End ===================
 
-    
+    // ================================= Service Two slider Start =========================
+    var serviceTwoSlider = new Swiper('.service-two-slider', {
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false
+      },
+      autoplay: false,
+      speed: 1500,
+      grabCursor: true,
+      spaceBetween: 24, 
+      loop: true,
+      slidesPerView: 7,
+      breakpoints: {
+          300: {
+              slidesPerView: 1,
+          },
+          992: {
+              slidesPerView: 2,
+          },
+          1300: {
+              slidesPerView: 3,
+          },
+      }
+    });
+    // ================================= Service Two slider End =========================
+
     
     
     

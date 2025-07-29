@@ -328,6 +328,19 @@
     border-color: transparent;
 }
 
+.btn-black {
+    background-color: var(--neutral-600) !important;
+    color: hsl(var(--white)) !important;
+}
+
+.btn-black:hover {
+    color: hsl(var(--white)) !important;
+}
+
+.btn-black.button--stroke::after {
+    border-color: transparent;
+}
+
 .hover-style-one:hover, .hover-style-one:active {
     background-color: var(--main-600);
 }
@@ -3214,6 +3227,10 @@ input:focus-visible {
     margin-inline-end: auto;
 }
 
+.tw--me-33-px {
+    margin-inline-end: -33px;
+}
+
 .my-120 {
     margin-block-start: 60px;
     margin-block-end: 60px;
@@ -3310,6 +3327,14 @@ input:focus-visible {
 
 .max-w-310-px {
     max-width: 310px;
+}
+
+.max-w-250-px {
+    max-width: 250px;
+}
+
+.max-w-600-px {
+    max-width: 600px;
 }
 
 .max-w-1140-px {
@@ -5582,6 +5607,17 @@ input:focus-visible {
     }
 }
 /* Banner Two Css end */
+/* Service Two Css Start */
+.service-two__bg {
+    width: 36%;
+}
+
+@media (min-width: 1200px) {
+    .width-100-vw {
+        margin-right: -32%;
+    }
+}
+/* Service Two Css End */
 /* ================================== rtl css start ================================== */
 .text-start {
     text-align: start !important;
