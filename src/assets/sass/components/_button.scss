@@ -58,7 +58,7 @@
     border: 0;
     color: hsl(var(--white));
     line-height: 1;
-    padding: 18px 32px;
+    padding: 22px 32px;
     position: relative;
     overflow: hidden;
     border-radius: 6px;
@@ -75,6 +75,21 @@
     &-main {
         background-color: var(--main-600) !important;
         color: var(--neutral-600) !important;
+
+        &:hover {
+            color: hsl(var(--white)) !important;
+        }
+
+        &.button--stroke {
+            &::after {
+                border-color: transparent;
+            }
+        }
+    }
+
+    &-main-two {
+        background-color: var(--main-two-600) !important;
+        color: hsl(var(--white)) !important;
 
         &:hover {
             color: hsl(var(--white)) !important;
@@ -125,6 +140,26 @@
         .button__flair {
             &::before {
                 background-color: hsl(var(--white));
+            }
+        }
+    }
+
+    &-three {
+
+        &:hover,
+        &:active {
+            background-color: var(--main-600);
+
+            &.button--stroke {
+                &::after {
+                    border-color: transparent;
+                }
+            }
+        }
+
+        .button__flair {
+            &::before {
+                background-color: var(--main-600);
             }
         }
     }

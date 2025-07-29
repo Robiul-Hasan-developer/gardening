@@ -290,7 +290,7 @@
     border: 0;
     color: hsl(var(--white));
     line-height: 1;
-    padding: 18px 32px;
+    padding: 22px 32px;
     position: relative;
     overflow: hidden;
     border-radius: 6px;
@@ -312,6 +312,19 @@
 }
 
 .btn-main.button--stroke::after {
+    border-color: transparent;
+}
+
+.btn-main-two {
+    background-color: var(--main-two-600) !important;
+    color: hsl(var(--white)) !important;
+}
+
+.btn-main-two:hover {
+    color: hsl(var(--white)) !important;
+}
+
+.btn-main-two.button--stroke::after {
     border-color: transparent;
 }
 
@@ -337,6 +350,18 @@
 
 .hover-style-two .button__flair::before {
     background-color: hsl(var(--white));
+}
+
+.hover-style-three:hover, .hover-style-three:active {
+    background-color: var(--main-600);
+}
+
+.hover-style-three:hover.button--stroke::after, .hover-style-three:active.button--stroke::after {
+    border-color: transparent;
+}
+
+.hover-style-three .button__flair::before {
+    background-color: var(--main-600);
 }
 
 /* =========================== Button Css End =================== */
@@ -785,8 +810,8 @@ h6,
     margin: 0;
     font-family: var(--heading-font);
     color: var(--heading-color);
-    line-height: 1.2;
-    font-weight: 700;
+    line-height: 1;
+    font-weight: 400;
 }
 
 h1,
@@ -1852,6 +1877,10 @@ input:focus-visible {
     line-height: 1;
 }
 
+.tw-leading-unset {
+    line-height: unset;
+}
+
 .opacity-05 {
     opacity: 0.05;
 }
@@ -2020,6 +2049,21 @@ input:focus-visible {
     font-family: var(--manrope-font);
 }
 
+.gradient-overlay-main {
+    position: relative;
+}
+
+.gradient-overlay-main::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(191, 232, 102, 0) 42.45%, #BFE866 83.03%);
+    inset-inline-start: 0;
+    inset-block-end: 0;
+    border-radius: inherit;
+}
+
 /* Height Css Class Start */
 .tw-h-05 {
     height: 0.125rem;
@@ -2141,8 +2185,8 @@ input:focus-visible {
     height: 92px;
 }
 
-.tw-h-320-px {
-    height: 320px;
+.tw-h-420-px {
+    height: 420px;
 }
 
 .tw-min-h-184-px {
@@ -3262,6 +3306,10 @@ input:focus-visible {
 /* Max width Css Class Start */
 .max-w-210-px {
     max-width: 210px;
+}
+
+.max-w-310-px {
+    max-width: 310px;
 }
 
 .max-w-1140-px {
@@ -4463,6 +4511,13 @@ input:focus-visible {
 }
 
 /* Transform Css End */
+/* Text stroke css start */
+.text-stroke-black {
+    -webkit-text-stroke: 1px var(--heading-color);
+    color: transparent;
+}
+
+/* Text stroke css end */
 /* Text Decoration Start */
 .hover-underline:hover {
     text-decoration: underline;

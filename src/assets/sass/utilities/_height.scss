@@ -9,20 +9,25 @@
   &-px {
     height: 1px;
   }
+
   &-screen {
     height: 100vh;
   }
+
   &-75-px {
     height: 75px;
   }
+
   &-84-px {
     height: 84px;
   }
+
   &-92-px {
     height: 92px;
   }
-  &-320-px {
-    height: 320px;
+
+  &-420-px {
+    height: 420px;
   }
 }
 
@@ -30,8 +35,10 @@
   &-184-px {
     min-height: 184px;
   }
+
   &-210-px {
     min-height: 210px !important;
   }
 }
+
 /* Height Css Class End */
