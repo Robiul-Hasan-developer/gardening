@@ -1201,6 +1201,14 @@ input:focus-visible {
     background-color: hsl(var(--white)/0.06);
 }
 
+.section-bg-one {
+    background-color: #F2F4F3;
+}
+
+.section-bg-two {
+    background-color: #F2F4F3;
+}
+
 /* hover bg class end */
 .border-main-50 {
     border-color: var(--main-50) !important;
@@ -1918,6 +1926,10 @@ input:focus-visible {
 
 .text-22-px {
     font-size: clamp(1.125rem, 0.8942rem + 0.4808vw, 1.375rem);
+}
+
+.text-52-px {
+    font-size: clamp(1.875rem, 0.6058rem + 2.6442vw, 3.25rem);
 }
 
 .tw-text-xs {
@@ -5618,6 +5630,26 @@ input:focus-visible {
     }
 }
 /* Service Two Css End */
+/* Choose Us Css Start */
+.left-line {
+    position: relative;
+    z-index: 1;
+}
+
+.left-line::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: #092210;
+    opacity: 10%;
+    inset-inline-start: 24px;
+    height: calc(100% - 80px);
+    inset-block-start: 24px;
+    z-index: -1;
+}
+
+/* Choose Us Css End */
 /* ================================== rtl css start ================================== */
 .text-start {
     text-align: start !important;
