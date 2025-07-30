@@ -40,11 +40,26 @@
         inset-block-end: 60px;
         inset-inline-start: 50%;
         transform: translateX(-50%);
+        animation: opacityHightLow 3s ease-in-out infinite;
 
         @media (max-width: 1300px) {
             width: 300px;
             height: 300px;
         }
+    }
+}
+
+@keyframes opacityHightLow {
+
+    0%,
+    100% {
+        opacity: 0.8;
+
+    }
+
+    50% {
+        opacity: 0.3;
+
     }
 }
 
